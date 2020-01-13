@@ -1,6 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { createMuiTheme } from '@material-ui/core';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from 'components/App';
+import 'typeface-roboto';
+/* -------------------------------------------------------------------------- */
+
+const Index: React.FC<{}> = () => {
+  const theme = createMuiTheme({
+    palette: {
+      type: 'dark'
+    }
+  });
+
+  return (
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </MuiThemeProvider>
+  );
+};
+
+ReactDOM.render(<Index />, document.getElementById('root'));

@@ -11,8 +11,8 @@ import 'typeface-roboto';
 const Index: React.FC<{}> = () => {
   const theme = createMuiTheme({
     palette: {
-      type: 'dark'
-    }
+      type: 'dark',
+    },
   });
 
   return (

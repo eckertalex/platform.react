@@ -1,46 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-![](https://github.com/eckertalex/frankenreact/workflows/Continuous%20Integration/badge.svg)
+<h1 align="center">Welcome to FrankenReact 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Continuous Integration Badge" src="https://github.com/eckertalex/frankenreact/workflows/Continuous%20Integration/badge.svg" />
+  <a href="https://github.com/eckertalex/frankenreact/wiki" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/eckertalex/frankenreact/blob/dev/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
 ## Available Scripts
+> Our Playground for new libraries and design principles.
 
-In the project directory, you can run:
+### 🏠 [Homepage](https://github.com/eckertalex/frankenreact)
 
-### `npm start`
+## Project Goal
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We are professional Frontend Developers based in Germany and our goal with this project is to learn as much as we can about **react** and the **typescript**/**javascript** ecosystem. This project serves as a **playground** for new libraries and design principles following best **coding standards** as best as we can.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Packages/Libraries
 
-### `npm test`
+### Form handling and validation
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [formik](https://www.npmjs.com/package/formik)
+- [yup](https://www.npmjs.com/package/yup)
 
-### `npm run build`
+### State Management
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [@redux-toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
+- [redux-saga](https://www.npmjs.com/package/redux-saga)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### UI and Theming
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [@material-ui](https://www.npmjs.com/package/@material-ui/core)
 
-### `npm run eject`
+### Localization
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [i18next](https://www.npmjs.com/package/i18next)
+- [react-i18next](https://www.npmjs.com/package/react-i18next)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Libraries
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [ramda](https://www.npmjs.com/package/ramda)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage Guide
 
-## Learn More
+### Install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
+
+```sh
+npm run start
+```
+
+### Run tests
+
+```sh
+npm run test
+```
+
+## Authors
+
+👤 **[eckertalex](https://github.com/eckertalex)**
+👤 **[jomo2305](https://github.com/jomo2305)**
+
+## 🤝 Contributing
+
+Take a look at the [contributing guide](https://github.com/eckertalex/frankenreact/blob/dev/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Alexander E.](https://github.com/eckertalex) and [Johannes M.](https://github.com/jomo2305).<br />
+This project is [MIT](https://github.com/eckertalex/frankenreact/blob/dev/LICENSE) licensed.

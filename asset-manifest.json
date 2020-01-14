@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/frankenreact/static/css/main.84030be4.chunk.css",
+    "main.js": "/frankenreact/static/js/main.52b6c744.chunk.js",
+    "main.js.map": "/frankenreact/static/js/main.52b6c744.chunk.js.map",
+    "runtime-main.js": "/frankenreact/static/js/runtime-main.592edc48.js",
+    "runtime-main.js.map": "/frankenreact/static/js/runtime-main.592edc48.js.map",
+    "static/css/2.3645ef74.chunk.css": "/frankenreact/static/css/2.3645ef74.chunk.css",
+    "static/js/2.72ce8a6c.chunk.js": "/frankenreact/static/js/2.72ce8a6c.chunk.js",
+    "static/js/2.72ce8a6c.chunk.js.map": "/frankenreact/static/js/2.72ce8a6c.chunk.js.map",
+    "index.html": "/frankenreact/index.html",
+    "precache-manifest.8fd33e1cd37c6579a18e20f6b84b8239.js": "/frankenreact/precache-manifest.8fd33e1cd37c6579a18e20f6b84b8239.js",
+    "service-worker.js": "/frankenreact/service-worker.js",
+    "static/css/2.3645ef74.chunk.css.map": "/frankenreact/static/css/2.3645ef74.chunk.css.map",
+    "static/css/main.84030be4.chunk.css.map": "/frankenreact/static/css/main.84030be4.chunk.css.map",
+    "static/js/2.72ce8a6c.chunk.js.LICENSE": "/frankenreact/static/js/2.72ce8a6c.chunk.js.LICENSE",
+    "static/media/index.css": "/frankenreact/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.592edc48.js",
+    "static/css/2.3645ef74.chunk.css",
+    "static/js/2.72ce8a6c.chunk.js",
+    "static/css/main.84030be4.chunk.css",
+    "static/js/main.52b6c744.chunk.js"
+  ]
+}

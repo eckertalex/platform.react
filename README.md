@@ -1,7 +1,8 @@
 <h1 align="center">Welcome to FrankenReact 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <img alt="Continuous Integration Badge" src="https://github.com/eckertalex/frankenreact/workflows/Continuous%20Integration/badge.svg" />
+  <img alt="Continuous Deployment Badge" src="https://github.com/coletiv/react-js-github-actions-example/workflows/Continuous%20Deployment/badge.svg" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/eckertalex/frankenreact/wiki" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -11,9 +12,12 @@
 </p>
 
 ## Available Scripts
+
 > Our Playground for new libraries and design principles.
 
 ### 🏠 [Homepage](https://github.com/eckertalex/frankenreact)
+
+### 🏠 [Demo](https://eckertalex.github.io/frankenreact)
 
 ## Project Goal
 

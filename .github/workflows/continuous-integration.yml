@@ -13,7 +13,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: CI=true npm run build
 
       - name: Test
-        run: npm run test --watchAll=false
+        run: CI=true npm test

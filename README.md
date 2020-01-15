@@ -81,6 +81,11 @@ Take a look at the [contributing guide](https://github.com/eckertalex/frankenrea
 
 Give a ⭐️ if this project helped you!
 
+## Changelog
+
+Take a look at the [changelog](https://github.com/eckertalex/frankenreact/blob/dev/CHANGELOG.md).
+We are using [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator) for changelog generation.
+
 ## 📝 License
 
 Copyright © 2020 [Alexander E.](https://github.com/eckertalex) and [Johannes M.](https://github.com/jomo2305).<br />

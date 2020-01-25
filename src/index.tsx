@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 
-import App from 'components/App';
+import App from 'App/App';
 import 'typeface-roboto';
 /* -------------------------------------------------------------------------- */
 

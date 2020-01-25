@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ProtectedRoute from 'components/Fragments/ProtectedRoute';
 import ROUTES from 'constants/routes';
 import LandingPage from 'pages/LandingPage/LandingPage';
 import DashboardPage from 'pages/DashboardPage/DashboardPage';
@@ -12,15 +13,15 @@ const Router: React.FC<{}> = () => (
   <BrowserRouter>
     <Switch>
       {/* UNPROTECTED ROUTES */}
-      <Route exact path={ROUTES.ROOT} component={LandingPage}></Route>
-      <Route path={ROUTES.SIGN_IN} component={SignInPage}></Route>
-      <Route path={ROUTES.SIGN_UP} component={SignUpPage}></Route>
+      <Route exact path={ROUTES.ROOT} component={LandingPage} />
+      <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
+      <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
 
       {/* PROTECTED ROUTES */}
-      <Route path={ROUTES.DASHBOARD} component={DashboardPage}></Route>
+      <ProtectedRoute exact path={ROUTES.DASHBOARD} component={DashboardPage} />
 
       {/* OTHER ROUTES */}
-      <Route path={ROUTES.CATCH_ALL} component={NotFoundPage}></Route>
+      <Route path={ROUTES.CATCH_ALL} component={NotFoundPage} />
     </Switch>
   </BrowserRouter>
 );

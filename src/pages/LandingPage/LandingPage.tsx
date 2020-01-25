@@ -1,13 +1,7 @@
 import React from 'react';
-import { Typography, Container } from '@material-ui/core';
-
-import './LandingPage.css';
+import { Typography } from '@material-ui/core';
 /* -------------------------------------------------------------------------- */
 
-const LandingPage: React.FC<{}> = () => (
-  <Container className="container">
-    <Typography variant="h1">Welcome to FrankenReact</Typography>
-  </Container>
-);
+const LandingPage: React.FC<{}> = () => <Typography variant="h1">Welcome to FrankenReact</Typography>;
 
 export default LandingPage;

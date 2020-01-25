@@ -1,13 +1,7 @@
 import React from 'react';
-import { Typography, Container } from '@material-ui/core';
-
-import './NotFoundPage.css';
+import { Typography } from '@material-ui/core';
 /* -------------------------------------------------------------------------- */
 
-const NotFoundPage: React.FC<{}> = () => (
-  <Container className="container">
-    <Typography variant="h1">404: Page Not Found</Typography>
-  </Container>
-);
+const NotFoundPage: React.FC<{}> = () => <Typography variant="h1">404: Page Not Found</Typography>;
 
 export default NotFoundPage;

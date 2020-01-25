@@ -2,6 +2,6 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 /* -------------------------------------------------------------------------- */
 
-const DashboardPage: React.FC<{}> = () => <Typography variant="h1">FrankenReact Dashboard</Typography>;
+const SignUpPage: React.FC<{}> = () => <Typography variant="h1">FrankenReact Sign Up</Typography>;
 
-export default DashboardPage;
+export default SignUpPage;

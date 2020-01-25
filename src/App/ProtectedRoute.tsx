@@ -16,7 +16,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = (props: ProtectedRouteProp
         auth.isAuthenticated() ? (
           <Component {...props} />
         ) : (
-          <Redirect to={{ pathname: ROUTES.ROOT, state: props.location }} />
+          <Redirect to={{ pathname: ROUTES.SIGN_IN, state: { referrer: props.location.pathname } }} />
         )
       }
     />

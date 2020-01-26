@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { ToastContainer } from 'react-toastify';
 import App from 'App/App';
+import 'utils/i18n';
 
 import 'typeface-roboto';
 import 'react-toastify/dist/ReactToastify.css';
@@ -30,7 +31,9 @@ const Index: React.FC<{}> = () => {
         draggable
         pauseOnHover
       />
-      <App />
+      <Suspense fallback="Loading...">
+        <App />
+      </Suspense>
     </MuiThemeProvider>
   );
 };

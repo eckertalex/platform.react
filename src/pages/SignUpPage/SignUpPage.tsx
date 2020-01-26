@@ -1,7 +1,11 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import { useTranslation } from 'react-i18next';
 /* -------------------------------------------------------------------------- */
 
-const SignUpPage: React.FC<{}> = () => <Typography variant="h1">FrankenReact Sign Up</Typography>;
+const SignUpPage: React.FC<{}> = () => {
+  const { t } = useTranslation();
+  return <Typography variant="h1">{t('SignUpPage.title')}</Typography>;
+};
 
 export default SignUpPage;

@@ -6,7 +6,7 @@ import 'App/App.css';
 /* -------------------------------------------------------------------------- */
 
 const App: React.FC<{}> = () => (
-  <Container className="container">
+  <Container maxWidth="lg" disableGutters className="container">
     <Router />
   </Container>
 );

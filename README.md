@@ -9,6 +9,9 @@
   <a href="https://github.com/eckertalex/frankenreact/blob/dev/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="http://commitizen.github.io/cz-cli/" target="_blank">
+    <img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
+  </a>
 </p>
 
 ## Available Scripts
@@ -83,7 +86,6 @@ Give a ⭐️ if this project helped you!
 ## Changelog
 
 Take a look at the [changelog](https://github.com/eckertalex/frankenreact/blob/dev/CHANGELOG.md).
-We are using [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator) for changelog generation.
 
 ## 📝 License
 

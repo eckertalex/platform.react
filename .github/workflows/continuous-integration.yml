@@ -7,13 +7,14 @@ jobs:
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout 🛎️
+        uses: actions/checkout@v1
 
-      - name: Install Dependencies
+      - name: Install Dependencies ⌛️
         run: npm ci
 
-      - name: Build
+      - name: Build 🔨
         run: CI=true npm run build
 
-      - name: Test
+      - name: Test 📝
         run: CI=true npm test -- --passWithNoTests

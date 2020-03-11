@@ -34,6 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "release": "standard-version",
+    "commit": "git-cz",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "typecheck": "tsc --noEmit",
@@ -41,8 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsc --noEmit && lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "pre-commit": "tsc --noEmit && lint-staged"
     }
   },
   "lint-staged": {

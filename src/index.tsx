@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+import { ToastContainer } from 'react-toastify';
+import App from 'App/App';
 
-import App from 'components/App';
 import 'typeface-roboto';
+import 'react-toastify/dist/ReactToastify.css';
 /* -------------------------------------------------------------------------- */
 
 const Index: React.FC<{}> = () => {
@@ -18,6 +20,16 @@ const Index: React.FC<{}> = () => {
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        draggable
+        pauseOnHover
+      />
       <App />
     </MuiThemeProvider>
   );

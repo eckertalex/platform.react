@@ -100,7 +100,7 @@ Give a ⭐️ if this project helped you!
 ## Changelog
 
 Take a look at the [changelog](https://github.com/eckertalex/frankenreact/blob/dev/CHANGELOG.md).
-We are using [commitizen](http://commitizen.github.io/cz-cli/) for our commits. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+This project uses [commitizen](http://commitizen.github.io/cz-cli/), see [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ## 📝 License
 

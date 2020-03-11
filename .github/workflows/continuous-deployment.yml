@@ -26,3 +26,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: build
           BASE_BRANCH: dev
+          DEBUG: true  

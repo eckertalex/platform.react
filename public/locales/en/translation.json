@@ -1,0 +1,24 @@
+{
+  "DashboardPage": {
+    "signOut": "Sign Out",
+    "title": "FrankenReact Dashboard"
+  },
+  "LandingPage": {
+    "title": "Welcome to FrankenReact",
+    "toSignInPage": "To Sign In Page"
+  },
+  "LanguagePicker": {
+    "language": "Language"
+  },
+  "NotFoundPage": {
+    "backToSafety": "Back to Safety",
+    "pageNotFound": "Page Not Found"
+  },
+  "SignInPage": {
+    "signIn": "Sign In",
+    "title": "Sign in to FrankenReact"
+  },
+  "SignUpPage": {
+    "title": "FrankenReact Sign Up"
+  }
+}

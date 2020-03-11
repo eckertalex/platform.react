@@ -1,6 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import { Typography, Button } from '@material-ui/core';
+import { useTranslation } from 'react-i18next';
 import auth from 'utils/auth';
 import ROUTES from 'constants/routes';
 /* -------------------------------------------------------------------------- */
@@ -12,6 +13,7 @@ const SignInPage: React.FC<SignInPageProps> = (props: SignInPageProps) => {
     history,
     location: { state },
   } = props;
+  const { t } = useTranslation();
 
   const handleSignIn = (): void => {
     auth.signIn((): void => history.push(state?.referrer || ROUTES.DASHBOARD));
@@ -19,9 +21,9 @@ const SignInPage: React.FC<SignInPageProps> = (props: SignInPageProps) => {
 
   return (
     <>
-      <Typography variant="h1">Sign in to FrankenReact</Typography>
+      <Typography variant="h1">{t('SignInPage.title')}</Typography>
       <Button variant="contained" color="primary" onClick={handleSignIn}>
-        Sign In
+        {t('SignInPage.signIn')}
       </Button>
     </>
   );

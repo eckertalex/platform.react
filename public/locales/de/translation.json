@@ -1,0 +1,24 @@
+{
+  "DashboardPage": {
+    "signOut": "Ausloggen",
+    "title": "FrankenReact Dashboard"
+  },
+  "LandingPage": {
+    "title": "Willkommen bei FrankenReact",
+    "toSignInPage": "Zum Login"
+  },
+  "LanguagePicker": {
+    "language": "Sprache"
+  },
+  "NotFoundPage": {
+    "backToSafety": "Zurück zur Startseite",
+    "pageNotFound": "Seite nicht gefunden"
+  },
+  "SignInPage": {
+    "signIn": "Einloggen",
+    "title": "Einloggen bei FrankenReact"
+  },
+  "SignUpPage": {
+    "title": "FrankenReact Registrierung"
+  }
+}

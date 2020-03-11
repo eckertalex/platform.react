@@ -9,11 +9,15 @@
   <a href="https://github.com/eckertalex/frankenreact/blob/dev/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="http://commitizen.github.io/cz-cli/" target="_blank">
+    <img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
+  </a>
+  <a href="https://twitter.com/eckertalex1" target="_blank">
+    <img alt="Twitter: eckertalex1" src="https://img.shields.io/twitter/follow/eckertalex1.svg?style=social" />
+  </a>
 </p>
 
-## Available Scripts
-
-> Our Playground for new libraries and design principles.
+> Dashboard template written in React and TypeScript.
 
 ### 🏠 [Homepage](https://github.com/eckertalex/frankenreact)
 
@@ -21,7 +25,7 @@
 
 ## Project Goal
 
-We are professional Frontend Developers based in Germany and our goal with this project is to learn as much as we can about **react** and the **typescript**/**javascript** ecosystem. This project serves as a **playground** for new libraries and design principles following best **coding standards** as best as we can.
+I am a professional Frontend Developer based in Germany. My goal with this project is to create a flexible and reusable dashboard template. On the way I hope to learn as much as I can about **react** and the **typescript**/**javascript** ecosystem.
 
 ## Packages/Libraries
 
@@ -38,6 +42,10 @@ We are professional Frontend Developers based in Germany and our goal with this 
 ### UI and Theming
 
 - [@material-ui](https://www.npmjs.com/package/@material-ui/core)
+
+### Charts
+
+- [@nivo](https://nivo.rocks/)
 
 ### Localization
 
@@ -68,10 +76,18 @@ npm run start
 npm run test
 ```
 
-## Authors
+### Cut a new release
 
-👤 **[eckertalex](https://github.com/eckertalex)**
-👤 **[jomo2305](https://github.com/jomo2305)**
+```sh
+npm run release
+```
+
+## Author
+
+👤 **eckertalex**
+
+- Github: [@eckertalex](https://github.com/eckertalex)
+- Twitter: [@eckertalex1](https://twitter.com/eckertalex1)
 
 ## 🤝 Contributing
 
@@ -84,9 +100,13 @@ Give a ⭐️ if this project helped you!
 ## Changelog
 
 Take a look at the [changelog](https://github.com/eckertalex/frankenreact/blob/dev/CHANGELOG.md).
-We are using [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator) for changelog generation.
+This project uses [commitizen](http://commitizen.github.io/cz-cli/), see [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ## 📝 License
 
-Copyright © 2020 [Alexander E.](https://github.com/eckertalex) and [Johannes M.](https://github.com/jomo2305).<br />
+Copyright &copy; 2020 [eckertalex](https://github.com/eckertalex).<br />
 This project is [MIT](https://github.com/eckertalex/frankenreact/blob/dev/LICENSE) licensed.
+
+---
+
+_The base of this README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

@@ -14,7 +14,7 @@ jobs:
           persist-credentials: false
 
       - name: Install dependencies ⌛️
-        run: npm ci
+        run: HUSKY_SKIP_INSTALL=1 npm ci
 
       - name: Build 🔨
         run: npm run build

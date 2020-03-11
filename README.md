@@ -71,7 +71,6 @@ npm run test
 ## Authors
 
 👤 **[eckertalex](https://github.com/eckertalex)**
-👤 **[jomo2305](https://github.com/jomo2305)**
 
 ## 🤝 Contributing
 
@@ -88,5 +87,5 @@ We are using [github-changelog-generator](https://github.com/github-changelog-ge
 
 ## 📝 License
 
-Copyright © 2020 [Alexander E.](https://github.com/eckertalex) and [Johannes M.](https://github.com/jomo2305).<br />
+Copyright &copy; 2020 [Alexander E.](https://github.com/eckertalex).<br />
 This project is [MIT](https://github.com/eckertalex/frankenreact/blob/dev/LICENSE) licensed.

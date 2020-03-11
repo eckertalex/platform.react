@@ -11,13 +11,13 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v1
 
-      - name: Install dependencies
+      - name: Install dependencies ⌛️
         run: npm ci
 
-      - name: Build
+      - name: Build 🔨
         run: npm run build
 
-      - name: Build and Deploy 🚀
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

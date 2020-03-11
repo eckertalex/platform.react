@@ -14,7 +14,7 @@ jobs:
           persist-credentials: false
 
       - name: Install dependencies ⌛️
-        run: HUSKY_SKIP_INSTALL=true npm ci
+        run: npm ci
 
       - name: Build 🔨
         run: npm run build
@@ -26,4 +26,3 @@ jobs:
           BRANCH: gh-pages
           FOLDER: build
           BASE_BRANCH: dev
-          DEBUG: true  

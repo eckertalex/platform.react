@@ -1,24 +1,35 @@
 {
-  "DashboardPage": {
-    "signOut": "Sign Out",
-    "title": "FrankenReact Dashboard"
+  "Dashboard": {
+    "title": "Dashboard"
   },
-  "LandingPage": {
-    "title": "Welcome to FrankenReact",
-    "toSignInPage": "To Sign In Page"
+  "Landing": {
+    "title": "Welcome",
+    "toSignIn": "To Sign In Page"
   },
   "LanguagePicker": {
     "language": "Language"
   },
-  "NotFoundPage": {
+  "MiniDrawer": {
+    "Dashboard": "Dashboard",
+    "Settings": "Settings"
+  },
+  "NotFound": {
     "backToSafety": "Back to Safety",
     "pageNotFound": "Page Not Found"
   },
-  "SignInPage": {
-    "signIn": "Sign In",
-    "title": "Sign in to FrankenReact"
+  "Settings": {
+    "title": "Settings"
   },
-  "SignUpPage": {
-    "title": "FrankenReact Sign Up"
+  "SignIn": {
+    "signIn": "Sign In",
+    "title": "Sign in"
+  },
+  "SignUp": {
+    "title": "Sign Up"
+  },
+  "Topbar": {
+    "appName": "FrankenReact",
+    "profile": "Profile",
+    "signOut": "Sign Out"
   }
 }

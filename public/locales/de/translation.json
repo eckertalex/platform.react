@@ -1,24 +1,35 @@
 {
-  "DashboardPage": {
-    "signOut": "Ausloggen",
-    "title": "FrankenReact Dashboard"
+  "Dashboard": {
+    "title": "Dashboard"
   },
-  "LandingPage": {
-    "title": "Willkommen bei FrankenReact",
-    "toSignInPage": "Zum Login"
+  "Landing": {
+    "title": "Willkommen",
+    "toSignIn": "Zum Login"
   },
   "LanguagePicker": {
     "language": "Sprache"
   },
-  "NotFoundPage": {
+  "MiniDrawer": {
+    "Dashboard": "Dashboard",
+    "Settings": "Einstellungen"
+  },
+  "NotFound": {
     "backToSafety": "Zurück zur Startseite",
     "pageNotFound": "Seite nicht gefunden"
   },
-  "SignInPage": {
-    "signIn": "Einloggen",
-    "title": "Einloggen bei FrankenReact"
+  "Settings": {
+    "title": "Einstellungen"
   },
-  "SignUpPage": {
-    "title": "FrankenReact Registrierung"
+  "SignIn": {
+    "signIn": "Einloggen",
+    "title": "Einloggen"
+  },
+  "SignUp": {
+    "title": "Registrierung"
+  },
+  "Topbar": {
+    "appName": "FrankenReact",
+    "profile": "Profil",
+    "signOut": "Ausloggen"
   }
 }

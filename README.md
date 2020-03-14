@@ -21,7 +21,7 @@
 
 ### 🏠 [Homepage](https://github.com/eckertalex/frankenreact)
 
-### 🏠 [Demo](https://eckertalex.github.io/frankenreact)
+### 🏠 [Demo](https://frankenreact.eckertalex.dev)
 
 ## Project Goal
 

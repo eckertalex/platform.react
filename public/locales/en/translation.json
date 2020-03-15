@@ -1,0 +1,38 @@
+{
+  "About": {
+    "title": "About"
+  },
+  "Dashboard": {
+    "title": "Dashboard"
+  },
+  "Landing": {
+    "title": "Welcome",
+    "toSignIn": "To Sign In Page"
+  },
+  "LanguagePicker": {
+    "language": "Language"
+  },
+  "MiniDrawer": {
+    "Dashboard": "Dashboard",
+    "Settings": "Settings"
+  },
+  "NotFound": {
+    "backToSafety": "Back to Safety",
+    "pageNotFound": "Page Not Found"
+  },
+  "Settings": {
+    "title": "Settings"
+  },
+  "SignIn": {
+    "signIn": "Sign In",
+    "title": "Sign in"
+  },
+  "SignUp": {
+    "title": "Sign Up"
+  },
+  "Topbar": {
+    "appName": "FrankenReact",
+    "profile": "Profile",
+    "signOut": "Sign Out"
+  }
+}

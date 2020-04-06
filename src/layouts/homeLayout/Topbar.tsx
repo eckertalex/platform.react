@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { useTranslation } from 'react-i18next';
 /* -------------------------------------------------------------------------- */
 
-const useStyles = makeStyles(theme =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     appBar: {
       flexGrow: 1,

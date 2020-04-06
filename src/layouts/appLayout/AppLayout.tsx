@@ -5,7 +5,7 @@ import MiniDrawer from 'layouts/appLayout/MiniDrawer';
 import Topbar from 'layouts/appLayout/Topbar';
 /* -------------------------------------------------------------------------- */
 
-const useStyles = makeStyles(theme =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       display: 'flex',
@@ -27,7 +27,7 @@ const AppLayout = (props: AppLayoutProps) => {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = () => {
-    setOpen(open => !open);
+    setOpen((open) => !open);
   };
 
   return (

@@ -11,7 +11,7 @@ import SidebarNav from 'layouts/appLayout/SidebarNav';
 
 const DRAWER_WIDTH = 240;
 
-const useStyles = makeStyles(theme =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     drawer: {
       width: DRAWER_WIDTH,

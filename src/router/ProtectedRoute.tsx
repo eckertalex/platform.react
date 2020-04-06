@@ -15,7 +15,7 @@ const ProtectedRoute = (props: ProtectedRouteProps) => {
   return (
     <Route
       {...rest}
-      render={propsInner =>
+      render={(propsInner) =>
         auth.isAuthenticated() ? (
           <Component {...propsInner} />
         ) : (

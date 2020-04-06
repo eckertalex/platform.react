@@ -47,7 +47,7 @@ const DropdownSelect = (props: DropdownSelectProps) => {
         onChange={(event): void => handleChange(event.target.value as string)}
         labelWidth={labelWidth}
       >
-        {Object.keys(options).map(e => (
+        {Object.keys(options).map((e) => (
           <MenuItem key={e} value={e}>
             {options[e]}
           </MenuItem>

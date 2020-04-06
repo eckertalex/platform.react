@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { List, ListItem, makeStyles, ListItemIcon, ListItemText } from '@material-ui/core';
 /* -------------------------------------------------------------------------- */
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   icon: {
     color: 'grey',
     marginLeft: theme.spacing(3),
@@ -31,7 +31,7 @@ const SidebarNav = (props: SidebarNavProps) => {
 
   return (
     <List>
-      {links.map(link => (
+      {links.map((link) => (
         <ListItem
           button
           component={NavLink}

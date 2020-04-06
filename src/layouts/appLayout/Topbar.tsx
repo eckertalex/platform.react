@@ -15,7 +15,7 @@ import auth from 'auth';
 import { useHistory } from 'react-router-dom';
 /* -------------------------------------------------------------------------- */
 
-const useStyles = makeStyles(theme =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     appBar: {
       flexGrow: 1,

@@ -52,10 +52,6 @@ I am a professional Frontend Developer based in Germany. My goal with this proje
 - [i18next](https://www.npmjs.com/package/i18next)
 - [react-i18next](https://www.npmjs.com/package/react-i18next)
 
-### Libraries
-
-- [ramda](https://www.npmjs.com/package/ramda)
-
 ## Usage Guide
 
 ### Install

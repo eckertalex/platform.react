@@ -1,0 +1,89 @@
+{
+  "AboutPage": {
+    "description": "Über uns von platform.react",
+    "title": "Über uns"
+  },
+  "App": {
+    "description": "Dashboard-Vorlage geschrieben in React."
+  },
+  "AppHomePage": {
+    "description": "Startseite von platform.react",
+    "signOut": "Abmelden",
+    "title": "Startseite"
+  },
+  "LandingFooter": {
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "cta": "Schließen Sie sich 31.000+ anderen an und verpassen Sie nie <br/> neue Tipps, Tutorials und mehr.",
+    "news": "News",
+    "placeholder": "Geben Sie Ihre E-Mail ein",
+    "subscribe": "Abonnieren"
+  },
+  "AuthPageLayout": {
+    "copyright": "2020 eckertalex. Alle Rechte vorbehalten.",
+    "createAccount": "Konto Erstellung",
+    "createAccountToContinue": "Erstellen Sie ein Konto um fortzufahren",
+    "enterEmailAndPassword": "Bitte geben Sie Ihre E-Mail-Adresse und Ihr Passwort ein, um fortzufahren",
+    "welcomeBack": "Willkommen zurück!"
+  },
+  "ForgotPasswordPage": {
+    "backToSignIn": "Zurück zur Anmeldung",
+    "email": "E-Mail",
+    "emailPlaceholder": "xyz@google.com",
+    "enterEmailToResetPassword": "Bitte geben Sie Ihre E-Mail-Adresse ein, um Ihr Passwort zurückzusetzen",
+    "helmetDescription": "Passwort vergessen von platform.react",
+    "helmetTitle": "Passwort Vergessen",
+    "requestEmail": "E-Mail anfordern"
+  },
+  "HeroText": {
+    "getStarted": "Jetzt Loslegen",
+    "headline": "Daten zur Anreicherung Ihres<1></1><2> Online-Geschäfts</2>",
+    "liveDemo": "Live-Demo",
+    "text": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+  },
+  "LandingPage": {
+    "ctaInvitation": "Beginnen Sie noch heute mit Ihrem kostenlosen Test.",
+    "ctaQuestion": "Bereit zum Eintauchen?",
+    "description": "Startseite von platform.react",
+    "getStarted": "Jetzt Loslegen",
+    "liveDemo": "Live-Demo",
+    "title": "Startseite"
+  },
+  "NotFoundPage": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "description": "404 Seite nicht gefunden",
+    "looksLikeYouAreLost": "Sieht aus, als hätten Sie sich verlaufen...",
+    "title": "404 Seite nicht gefunden"
+  },
+  "SettingsPage": {
+    "description": "Einstellungen von platform.react",
+    "title": "Einstellungen"
+  },
+  "SignInPage": {
+    "createAccount": "<0>Sie haben noch kein Konto?</0><1>Konto anlegen</1>",
+    "email": "E-Mail",
+    "emailPlaceholder": "xyz@google.com",
+    "helmetDescription": "Anmeldeseite von platform.react",
+    "helmetTitle": "Anmelden",
+    "pleaseChoosePassword": "Bitte wähle ein Passwort.",
+    "rememberPassword": "Passwort merken",
+    "signIn": "Anmelden"
+  },
+  "SignUpPage": {
+    "backToSignIn": "<0>Sie haben bereits ein Konto haben?</0><1>Anmelden</1>",
+    "email": "E-Mail",
+    "emailPlaceholder": "xyz@google.com",
+    "helmetDescription": "Registrierungsseite von platform.react",
+    "helmetTitle": "Registrierung",
+    "password": "Passwort",
+    "passwordPlaceholder": "************",
+    "signUp": "Registrieren",
+    "username": "Nutzername"
+  },
+  "Topbar": {
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "news": "News",
+    "signIn": "Anmelden"
+  }
+}

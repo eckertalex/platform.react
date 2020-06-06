@@ -1,0 +1,89 @@
+{
+  "AboutPage": {
+    "description": "About page of platform.react",
+    "title": "About"
+  },
+  "App": {
+    "description": "Dashboard template written in React."
+  },
+  "AppHomePage": {
+    "description": "Home Page of platform.react",
+    "signOut": "Sign Out",
+    "title": "Home"
+  },
+  "LandingFooter": {
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Join 31,000+ other and never miss <br/> out on new tips, tutorials, and more.",
+    "news": "News",
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe"
+  },
+  "AuthPageLayout": {
+    "copyright": "2020 eckertalex. All rights reserved.",
+    "createAccount": "Create an Account",
+    "createAccountToContinue": "Create an account to continue",
+    "enterEmailAndPassword": "Please enter your email and password to continue",
+    "welcomeBack": "Welcome back!"
+  },
+  "ForgotPasswordPage": {
+    "backToSignIn": "Back to sign in",
+    "email": "Email",
+    "emailPlaceholder": "xyz@google.com",
+    "enterEmailToResetPassword": "Please enter your email to reset your password",
+    "helmetDescription": "Forgot password page for platform.react",
+    "helmetTitle": "Forgot password page",
+    "requestEmail": "Request Email"
+  },
+  "HeroText": {
+    "getStarted": "Get started",
+    "headline": "Data to enrich your<1></1><2> online business</2>",
+    "liveDemo": "Live demo",
+    "text": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+  },
+  "LandingPage": {
+    "ctaInvitation": "Start your free trial today.",
+    "ctaQuestion": "Ready to dive in?",
+    "description": "Home Page of platform.react",
+    "getStarted": "Get started",
+    "liveDemo": "Live demo",
+    "title": "Home"
+  },
+  "NotFoundPage": {
+    "backToDashboard": "Back to Dashboard",
+    "description": "404 Page not found",
+    "looksLikeYouAreLost": "Looks like you've got lost...",
+    "title": "404 Page not found"
+  },
+  "SettingsPage": {
+    "description": "Settings of platform.react",
+    "title": "Settings"
+  },
+  "SignInPage": {
+    "createAccount": "<0>Don't have an account?</0><1>Create Account</1>",
+    "email": "Email",
+    "emailPlaceholder": "xyz@google.com",
+    "helmetDescription": "Sign in page of platform.react",
+    "helmetTitle": "Sign In",
+    "pleaseChoosePassword": "Please choose a password.",
+    "rememberPassword": "Remember Password",
+    "signIn": "Sign In"
+  },
+  "SignUpPage": {
+    "backToSignIn": "<0>Already have an account?</0><1>Sign In</1>",
+    "email": "Email",
+    "emailPlaceholder": "xyz@google.com",
+    "helmetDescription": "Sign up page of platform.react",
+    "helmetTitle": "Sign Up",
+    "password": "Password",
+    "passwordPlaceholder": "************",
+    "signUp": "Sign Up",
+    "username": "username"
+  },
+  "Topbar": {
+    "about": "About",
+    "contact": "Contact",
+    "news": "News",
+    "signIn": "Sign In"
+  }
+}

@@ -1,0 +1,9 @@
+import { lazyLoad } from 'utils/loadable';
+/* -------------------------------------------------------------------------- */
+
+const {{ properCase ComponentName }}Page = lazyLoad(
+  () => import('pages/{{ properCase ComponentName }}Page/{{ properCase ComponentName }}Page'),
+  (module) => module.default,
+);
+
+export default {{ properCase ComponentName }}Page

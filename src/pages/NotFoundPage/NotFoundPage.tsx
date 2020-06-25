@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-import Illustration404 from 'assets/svg/Illustration404'
+import Illustration404 from 'pages/NotFoundPage/Illustration404'
 import Button from 'fragments/Button/Button'
 import { home } from 'routes/routes'
 /* -------------------------------------------------------------------------- */
@@ -22,7 +22,7 @@ export default function NotFoundPage() {
           <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm">
             <div className="w-full p-8">
               <div className="flex justify-center mb-4">
-                <Illustration404 width={358} height={195} />
+                <Illustration404 />
               </div>
               <div className="flex flex-col items-center">
                 <p className="text-lg text-center font-semibold mb-2">

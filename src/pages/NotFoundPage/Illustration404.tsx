@@ -1,25 +1,14 @@
 import React from 'react'
 /* -------------------------------------------------------------------------- */
 
-type Illustration404Props = {
-  width?: number
-  height?: number
-}
-
-Illustration404.defaultProps = {
-  width: 1074.392,
-  height: 584.231,
-}
-
-export default function Illustration404(props: Illustration404Props) {
-  const { width, height } = props
+export default function Illustration404() {
   return (
     <svg
       id="fd59ce54-f850-4dfc-bc34-dd7d379d600e"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
+      width="358"
+      height="195"
       viewBox="0 0 1074.392 584.231"
     >
       <title>page not found</title>

@@ -6,11 +6,11 @@ interface Opts {
 }
 type Unpromisify<T> = T extends Promise<infer P> ? P : never
 
-export const lazyLoad = <T extends Promise<any>, U extends React.ComponentType<any>>(
+export function lazyLoad<T extends Promise<any>, U extends React.ComponentType<any>>(
   importFunc: () => T,
   selectorFunc?: (s: Unpromisify<T>) => U,
   opts: Opts = { fallback: null }
-) => {
+) {
   let lazyFactory: () => Promise<{ default: U }> = importFunc
 
   if (selectorFunc) {

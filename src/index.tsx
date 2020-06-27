@@ -6,7 +6,8 @@ import * as ReactDOM from 'react-dom'
 import * as serviceWorker from 'serviceWorker'
 
 // Import root app
-import { App } from 'app/App'
+import App from 'app/app'
+
 // Initialize languages
 import 'i18n/i18n'
 
@@ -35,9 +36,9 @@ if (module.hot) {
   // Hot reloadable app
   // modules.hot.accept does not accept dynamic dependencies,
   // have to be constants at compile-time
-  module.hot.accept(['./app/App'], () => {
+  module.hot.accept(['./app/app'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE)
-    const App = require('./app/App').App
+    const App = require('./app/app').App
 
     ReactDOM.render(<Index element={<App />} />, MOUNT_NODE)
   })

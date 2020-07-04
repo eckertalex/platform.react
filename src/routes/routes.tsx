@@ -1,35 +1,15 @@
-export const CATCH_ALL = '*'
+// ----- routes -----
 
-export const HOME = {
-  HOME: '/',
-  ABOUT: 'about',
-}
+export const home = () => '/'
 
-export const APP = {
-  APP_HOME: 'home',
-  SETTINGS: 'settings',
-}
+export const about = () => '/about'
 
-export const AUTH = {
-  SIGN_IN: 'signin',
-  FORGOT_PASSWORD: 'forgotPassword',
-  SIGN_UP: 'signup',
-}
+export const appHome = () => '/home'
 
-export default { HOME, AUTH, APP, CATCH_ALL }
+export const settings = () => '/settings'
 
-// ----- routes functions -----
+export const signIn = () => '/signin'
 
-export const home = () => `/${HOME.HOME}`
+export const forgotPassword = () => '/forgotpassword'
 
-export const about = () => `/${HOME.ABOUT}`
-
-export const appHome = () => `/${APP.APP_HOME}`
-
-export const settings = () => `/${APP.SETTINGS}`
-
-export const signIn = () => `/${AUTH.SIGN_IN}`
-
-export const forgotPassword = () => `/${AUTH.FORGOT_PASSWORD}`
-
-export const signUp = () => `/${AUTH.SIGN_UP}`
+export const signUp = () => '/signup'

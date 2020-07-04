@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation, Trans } from 'react-i18next'
 
-import AuthPageLayout from 'layouts/auth-page-layout/auth-page-layout'
 import TextField from 'fragments/text-field/text-field'
 import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
+import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
 
 export default function SignUpPage() {
@@ -16,10 +16,11 @@ export default function SignUpPage() {
   }
 
   return (
-    <AuthPageLayout
-      helmetTitle={t('SignUpPage.helmetTitle', 'Sign In')}
-      helmetDescription={t('SignUpPage.helmetDescription', 'Sign in page of platform.react')}
-    >
+    <>
+      <SEO
+        helmetTitle={t('SignUpPage.helmetTitle', 'Sign In')}
+        helmetDescription={t('SignUpPage.helmetDescription', 'Sign in page of platform.react')}
+      />
       <p className="text-xl text-gray-600 text-center">{t('AuthPageLayout.createAccount', 'Create an Account')}</p>
       <p className="text-sm mb-4 text-gray-500 text-center">
         {t('AuthPageLayout.createAccountToContinue', 'Create an account to continue')}
@@ -61,6 +62,6 @@ export default function SignUpPage() {
           </Trans>
         </div>
       </form>
-    </AuthPageLayout>
+    </>
   )
 }

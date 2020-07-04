@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import AuthPageLayout from 'layouts/auth-page-layout/auth-page-layout'
 import TextField from 'fragments/text-field/text-field'
 import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
+import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
 
 export default function ForgotPasswordPage() {
@@ -16,10 +16,11 @@ export default function ForgotPasswordPage() {
   }
 
   return (
-    <AuthPageLayout
-      helmetTitle={t('ForgotPasswordPage.helmetTitle', 'Forgot password page')}
-      helmetDescription={t('ForgotPasswordPage.helmetDescription', 'Forgot password page for platform.react')}
-    >
+    <>
+      <SEO
+        helmetTitle={t('ForgotPasswordPage.helmetTitle', 'Forgot password page')}
+        helmetDescription={t('ForgotPasswordPage.helmetDescription', 'Forgot password page for platform.react')}
+      />
       <p className="text-sm text-gray-500 mb-4 text-center">
         {t('ForgotPasswordPage.enterEmailToResetPassword', 'Please enter your email to reset your password')}
       </p>
@@ -42,6 +43,6 @@ export default function ForgotPasswordPage() {
           </Link>
         </div>
       </form>
-    </AuthPageLayout>
+    </>
   )
 }

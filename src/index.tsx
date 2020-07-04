@@ -38,7 +38,7 @@ if (module.hot) {
   // have to be constants at compile-time
   module.hot.accept(['./app/app'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE)
-    const App = require('./app/app').App
+    const App = require('./app/app').default
 
     ReactDOM.render(<Index element={<App />} />, MOUNT_NODE)
   })

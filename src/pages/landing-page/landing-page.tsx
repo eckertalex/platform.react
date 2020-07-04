@@ -2,19 +2,20 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import LandingPageLayout from 'layouts/landing-page-layout/landing-page-layout'
 import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
+import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
 
 export default function LandingPage() {
   const { t } = useTranslation()
 
   return (
-    <LandingPageLayout
-      helmetTitle={t('LandingPage.title', 'Home')}
-      helmetDescription={t('LandingPage.description', 'Home Page of platform.react')}
-    >
+    <>
+      <SEO
+        helmetTitle={t('LandingPage.title', 'Home')}
+        helmetDescription={t('LandingPage.description', 'Home Page of platform.react')}
+      />
       <div className="bg-gray-100">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
@@ -36,6 +37,6 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-    </LandingPageLayout>
+    </>
   )
 }

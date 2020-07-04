@@ -2,12 +2,12 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation, Trans } from 'react-i18next'
 
-import AuthPageLayout from 'layouts/auth-page-layout/auth-page-layout'
 import TextField from 'fragments/text-field/text-field'
 import Checkbox from 'fragments/checkbox/checkbox'
 import Button from 'fragments/button/button'
 import { useAuth } from 'context/auth-context'
 import { forgotPassword, appHome, signUp } from 'routes/routes'
+import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
 
 export default function SignInPage() {
@@ -22,10 +22,11 @@ export default function SignInPage() {
   }
 
   return (
-    <AuthPageLayout
-      helmetTitle={t('SignInPage.helmetTitle', 'Sign In')}
-      helmetDescription={t('SignInPage.helmetDescription', 'Sign in page of platform.react')}
-    >
+    <>
+      <SEO
+        helmetTitle={t('SignInPage.helmetTitle', 'Sign In')}
+        helmetDescription={t('SignInPage.helmetDescription', 'Sign in page of platform.react')}
+      />
       <p className="text-xl text-gray-600 text-center">{t('AuthPageLayout.welcomeBack', 'Welcome back!')}</p>
       <p className="text-sm mb-4 text-gray-500 text-center">
         {t('AuthPageLayout.enterEmailAndPassword', 'Please enter your email and password to continue')}
@@ -74,6 +75,6 @@ export default function SignInPage() {
           </Trans>
         </div>
       </form>
-    </AuthPageLayout>
+    </>
   )
 }

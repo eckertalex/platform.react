@@ -10,7 +10,10 @@ import SignUpPage from 'pages/sign-up-page/loadable'
 import ForgotPasswordPage from 'pages/forgot-password-page/loadable'
 import AppHomePage from 'pages/app-home-page/loadable'
 import SettingsPage from 'pages/settings-page/loadable'
-import ROUTES from 'routes/routes'
+import AuthPageLayout from 'layouts/auth-page-layout/auth-page-layout'
+import { signIn, forgotPassword, signUp, home, about, appHome, settings } from 'routes/routes'
+import AppPageLayout from 'layouts/app-page-layout/app-page-layout'
+import LandingPageLayout from 'layouts/landing-page-layout/landing-page-layout'
 /* -------------------------------------------------------------------------- */
 
 export default function Router() {
@@ -19,21 +22,23 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={ROUTES.HOME.HOME} element={<LandingPage />} />
-        <Route path={ROUTES.HOME.ABOUT} element={<AboutPage />} />
+        <Route path="/" element={<LandingPageLayout />}>
+          <Route path={home()} element={<LandingPage />} />
+          <Route path={about()} element={<AboutPage />} />
+        </Route>
         {state.isAuthenticated ? (
-          <>
-            <Route path={ROUTES.APP.APP_HOME} element={<AppHomePage />} />
-            <Route path={ROUTES.APP.SETTINGS} element={<SettingsPage />} />
-          </>
+          <Route path="/" element={<AppPageLayout />}>
+            <Route path={appHome()} element={<AppHomePage />} />
+            <Route path={settings()} element={<SettingsPage />} />
+          </Route>
         ) : (
-          <>
-            <Route path={ROUTES.AUTH.SIGN_IN} element={<SignInPage />} />
-            <Route path={ROUTES.AUTH.FORGOT_PASSWORD} element={<ForgotPasswordPage />} />
-            <Route path={ROUTES.AUTH.SIGN_UP} element={<SignUpPage />} />
-          </>
+          <Route path="/" element={<AuthPageLayout />}>
+            <Route path={signIn()} element={<SignInPage />} />
+            <Route path={forgotPassword()} element={<ForgotPasswordPage />} />
+            <Route path={signUp()} element={<SignUpPage />} />
+          </Route>
         )}
-        <Route path={ROUTES.CATCH_ALL} element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )

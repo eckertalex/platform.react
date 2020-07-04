@@ -1,21 +1,11 @@
 import React from 'react'
-
-import SEO from 'fragments/seo/seo'
+import { Outlet } from 'react-router-dom'
 /* -------------------------------------------------------------------------- */
 
-type AppPageLayoutProps = {
-  children: React.ReactNode
-  helmetTitle: string
-  helmetDescription: string
-}
-
-export default function AppPageLayout(props: AppPageLayoutProps) {
-  const { helmetTitle, helmetDescription, children } = props
-
+export default function AppPageLayout() {
   return (
-    <>
-      <SEO helmetTitle={helmetTitle} helmetDescription={helmetDescription} />
-      <main className="container mx-auo">{children}</main>
-    </>
+    <main className="container mx-auo">
+      <Outlet />
+    </main>
   )
 }

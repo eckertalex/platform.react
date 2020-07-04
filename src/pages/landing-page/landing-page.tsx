@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
 import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
@@ -23,17 +22,13 @@ export default function LandingPage() {
             <br />
             <span className="text-primary-500">{t('LandingPage.ctaInvitation', 'Start your free trial today.')}</span>
           </h2>
-          <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
-            <Link to={signIn()}>
-              <Button lg>{t('LandingPage.getStarted', 'Get started')}</Button>
+          <div className="mt-8 flex space-x-3 lg:flex-shrink-0 lg:mt-0">
+            <Link to={signIn()} className="btn btn-lg btn-primary">
+              {t('LandingPage.getStarted', 'Get started')}
             </Link>
-            <div className="ml-3">
-              <Link to={signIn()}>
-                <Button lg outlined>
-                  {t('LandingPage.liveDemo', 'Live demo')}
-                </Button>
-              </Link>
-            </div>
+            <Link to={signIn()} className="btn btn-lg btn-primary-outline">
+              {t('LandingPage.liveDemo', 'Live demo')}
+            </Link>
           </div>
         </div>
       </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Trans, useTranslation } from 'react-i18next'
 
-import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
 /* -------------------------------------------------------------------------- */
 
@@ -24,17 +23,13 @@ export default function HeroText() {
             'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.'
           )}
         </p>
-        <div className="mt-8 flex lg:flex-shrink-0 lg:mt-4">
-          <Link to={signIn()}>
-            <Button lg>{t('HeroText.getStarted', 'Get started')}</Button>
+        <div className="mt-8 flex space-x-3 lg:flex-shrink-0 lg:mt-4">
+          <Link to={signIn()} className="btn btn-lg btn-primary">
+            {t('HeroText.getStarted', 'Get started')}
           </Link>
-          <div className="ml-3">
-            <Link to={signIn()}>
-              <Button lg outlined>
-                {t('HeroText.liveDemo', 'Live demo')}
-              </Button>
-            </Link>
-          </div>
+          <Link to={signIn()} className="btn btn-lg btn-primary-outline">
+            {t('HeroText.liveDemo', 'Live demo')}
+          </Link>
         </div>
       </div>
     </section>

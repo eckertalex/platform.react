@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import TextField from 'fragments/text-field/text-field'
-import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
 import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
@@ -33,9 +32,9 @@ export default function ForgotPasswordPage() {
           />
         </div>
         <div className="flex justify-center">
-          <Button type="submit" className="w-10/12">
+          <button type="submit" className="btn btn-primary w-10/12">
             {t('ForgotPasswordPage.requestEmail', 'Request Email')}
-          </Button>
+          </button>
         </div>
         <div className="flex justify-center mt-2">
           <Link to={signIn()} className="text-primary-500 text-sm ml-1 hover:underline">

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation, Trans } from 'react-i18next'
 
 import TextField from 'fragments/text-field/text-field'
-import Button from 'fragments/button/button'
 import { signIn } from 'routes/routes'
 import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
@@ -49,9 +48,9 @@ export default function SignUpPage() {
           />
         </div>
         <div className="flex justify-center">
-          <Button type="submit" className="w-10/12">
+          <button type="submit" className="btn btn-primary w-10/12">
             {t('SignUpPage.signUp', 'Sign Up')}
-          </Button>
+          </button>
         </div>
         <div className="flex justify-center mt-2">
           <Trans i18nKey="SignUpPage.backToSignIn">

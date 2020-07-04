@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 import Illustration404 from 'pages/not-found-page/illustration-404'
-import Button from 'fragments/button/button'
 import { home } from 'routes/routes'
 import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
@@ -28,8 +27,8 @@ export default function NotFoundPage() {
                 <p className="text-lg text-center font-semibold mb-2">
                   {t('NotFoundPage.looksLikeYouAreLost', "Looks like you've got lost...")}
                 </p>
-                <Link to={home()}>
-                  <Button>{t('NotFoundPage.backToDashboard', 'Back to Dashboard')}</Button>
+                <Link to={home()} className="btn btn-primary">
+                  {t('NotFoundPage.backToDashboard', 'Back to Dashboard')}
                 </Link>
               </div>
             </div>

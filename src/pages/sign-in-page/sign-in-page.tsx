@@ -4,7 +4,6 @@ import { useTranslation, Trans } from 'react-i18next'
 
 import TextField from 'fragments/text-field/text-field'
 import Checkbox from 'fragments/checkbox/checkbox'
-import Button from 'fragments/button/button'
 import { useAuth } from 'context/auth-context'
 import { forgotPassword, appHome, signUp } from 'routes/routes'
 import SEO from 'fragments/seo/seo'
@@ -62,9 +61,9 @@ export default function SignInPage() {
           </div>
         </div>
         <div className="flex justify-center">
-          <Button type="submit" className="w-10/12">
+          <button type="submit" className="btn btn-primary w-10/12">
             {t('SignInPage.signIn', 'Sign In')}
-          </Button>
+          </button>
         </div>
         <div className="flex justify-center mt-2">
           <Trans i18nKey="SignInPage.createAccount">

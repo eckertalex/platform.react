@@ -5,9 +5,10 @@ import { X as XIcon } from 'react-feather'
 import classNames from 'classnames'
 
 import LogoPlatformReact from 'assets/svg/logo-platform-react'
-import { about, signIn, appHome } from 'routes/routes'
+import { signIn, appHome } from 'routes/routes'
 import useClickOutside from 'hooks/use-click-outside'
 import { useAuth } from 'context/auth-context'
+import menuConfig from 'layouts/landing-page-layout/menuConfig'
 /* -------------------------------------------------------------------------- */
 
 type MobileMenuProps = {
@@ -48,33 +49,31 @@ export default function MobileMenu(props: MobileMenuProps) {
             </div>
           </div>
           <div className="px-2 pt-2 pb-3">
-            <Link
-              to={about()}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 w-full hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out"
-            >
-              {t('Topbar.about', 'About')}
-            </Link>
-            <button
-              type="button"
-              onClick={handleClose}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 w-full text-left hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out"
-            >
-              {t('Topbar.news', 'News')}
-            </button>
-            <button
-              type="button"
-              onClick={handleClose}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 w-full text-left hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out"
-            >
-              {t('Topbar.contact', 'Contact')}
-            </button>
+            {menuConfig(t).map((e) => {
+              const className =
+                'block px-3 py-2 rounded-md text-base font-medium text-gray-700 w-full text-left hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out'
+
+              if (!e.path) {
+                return (
+                  <button key={e.id} type="button" onClick={handleClose} className={className}>
+                    {e.label}
+                  </button>
+                )
+              }
+
+              return (
+                <Link key={e.id} to={e.path} className={className}>
+                  {e.label}
+                </Link>
+              )
+            })}
           </div>
           <div>
             <Link
               to={isAuthenticated ? appHome() : signIn()}
               className="block w-full px-5 py-3 text-center font-medium text-primary-600 bg-gray-100 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:bg-gray-100 focus:text-primary-700 transition duration-150 ease-in-out"
             >
-              {isAuthenticated ? t('Topbar.dashboard', 'Dashboard') : t('Topbar.signIn', 'Sign In')}
+              {isAuthenticated ? t('MobileMenu.dashboard', 'Dashboard') : t('MobileMenu.signIn', 'Sign In')}
             </Link>
           </div>
         </div>

@@ -18,6 +18,10 @@
     "enterEmailAndPassword": "Bitte geben Sie Ihre E-Mail-Adresse und Ihr Passwort ein, um fortzufahren",
     "welcomeBack": "Willkommen zurück!"
   },
+  "DesktopMenu": {
+    "dashboard": "Dashboard",
+    "signIn": "Anmelden"
+  },
   "ForgotPasswordPage": {
     "backToSignIn": "Zurück zur Anmeldung",
     "email": "E-Mail",
@@ -52,6 +56,10 @@
     "liveDemo": "Live-Demo",
     "title": "Startseite"
   },
+  "MobileMenu": {
+    "dashboard": "Dashboard",
+    "signIn": "Anmelden"
+  },
   "NotFoundPage": {
     "back": "Zurück",
     "description": "404 Seite nicht gefunden",
@@ -83,14 +91,12 @@
     "signUp": "Registrieren",
     "username": "Nutzername"
   },
-  "Topbar": {
+  "menuConfig": {
     "about": "Über uns",
     "contact": "Kontakt",
-    "dashboard": "Dashboard",
-    "news": "News",
-    "signIn": "Anmelden"
+    "news": "Neuigkeiten"
   },
-  "menu": {
+  "sidebarConfig": {
     "overview": "Übersicht",
     "settings": "Einstellungen"
   }

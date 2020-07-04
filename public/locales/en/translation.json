@@ -18,6 +18,10 @@
     "enterEmailAndPassword": "Please enter your email and password to continue",
     "welcomeBack": "Welcome back!"
   },
+  "DesktopMenu": {
+    "dashboard": "Dashboard",
+    "signIn": "Sign In"
+  },
   "ForgotPasswordPage": {
     "backToSignIn": "Back to sign in",
     "email": "Email",
@@ -52,6 +56,10 @@
     "liveDemo": "Live demo",
     "title": "Home"
   },
+  "MobileMenu": {
+    "dashboard": "Dashboard",
+    "signIn": "Sign In"
+  },
   "NotFoundPage": {
     "back": "Back",
     "description": "404 Page not found",
@@ -83,14 +91,12 @@
     "signUp": "Sign Up",
     "username": "username"
   },
-  "Topbar": {
+  "menuConfig": {
     "about": "About",
     "contact": "Contact",
-    "dashboard": "Dashboard",
-    "news": "News",
-    "signIn": "Sign In"
+    "news": "News"
   },
-  "menu": {
+  "sidebarConfig": {
     "overview": "Overview",
     "settings": "Settings"
   }

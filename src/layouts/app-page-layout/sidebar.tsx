@@ -5,7 +5,7 @@ import { useLocation, Link, NavLink } from 'react-router-dom'
 import { appHome } from 'routes/routes'
 import LogoPlatformReact from 'assets/svg/logo-platform-react'
 import classNames from 'classnames'
-import { menuConfig, menuFooterConfig } from 'layouts/app-page-layout/menu'
+import { sidebarConfig, sidebarFooterConfig } from 'layouts/app-page-layout/sidebarConfig'
 /* -------------------------------------------------------------------------- */
 
 export default function Sidebar() {
@@ -21,7 +21,7 @@ export default function Sidebar() {
           </Link>
         </div>
         <div>
-          {menuConfig(t).map((e) => (
+          {sidebarConfig(t).map((e) => (
             <NavLink
               key={e.path}
               className={classNames(
@@ -38,7 +38,7 @@ export default function Sidebar() {
           ))}
         </div>
         <div className="absolute bottom-0 my-10 w-64">
-          {menuFooterConfig(t).map((e) => (
+          {sidebarFooterConfig(t).map((e) => (
             <NavLink
               key={e.path}
               className={classNames(

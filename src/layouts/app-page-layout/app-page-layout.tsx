@@ -1,5 +1,6 @@
 import React from 'react'
-import { Helmet } from 'react-helmet-async'
+
+import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
 
 type AppPageLayoutProps = {
@@ -13,11 +14,8 @@ export default function AppPageLayout(props: AppPageLayoutProps) {
 
   return (
     <>
-      <Helmet>
-        <title>{helmetTitle}</title>
-        <meta name="description" content={helmetDescription} />
-      </Helmet>
-      <main className="container mx-auto">{children}</main>
+      <SEO helmetTitle={helmetTitle} helmetDescription={helmetDescription} />
+      <main className="container mx-auo">{children}</main>
     </>
   )
 }

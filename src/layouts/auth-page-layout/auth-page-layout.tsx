@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 
 import LogoPlatformReact from 'assets/svg/logo-platform-react'
 import { home } from 'routes/routes'
+import SEO from 'fragments/seo/seo'
 /* -------------------------------------------------------------------------- */
 
 type AuthPageLayoutProps = {
@@ -19,10 +19,7 @@ export default function AuthPageLayout(props: AuthPageLayoutProps) {
 
   return (
     <>
-      <Helmet>
-        <title>{helmetTitle}</title>
-        <meta name="description" content={helmetDescription} />
-      </Helmet>
+      <SEO helmetTitle={helmetTitle} helmetDescription={helmetDescription} />
       <main className="h-screen bg-gray-200">
         <div className="container mx-auto pb-6 pt-6 md:pt-16">
           <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm">

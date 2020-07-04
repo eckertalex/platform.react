@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu as MenuIcon } from 'react-feather'
 
@@ -9,7 +9,7 @@ import { home } from 'routes/routes'
 /* -------------------------------------------------------------------------- */
 
 export default function Navbar() {
-  const [mobileMenuOpen, toggleMobileMenu] = useState(false)
+  const [mobileMenuOpen, toggleMobileMenu] = React.useState(false)
 
   return (
     <>

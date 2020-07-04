@@ -1,0 +1,24 @@
+.spinner {
+  @apply relative text-transparent pointer-events-none;
+}
+
+.spinner:after {
+  @apply absolute block border-2 border-solid border-primary-500 rounded-full;
+  content: '';
+  top: calc(50% - (1em / 2));
+  left: calc(50% - (1em / 2));
+  width: 1em;
+  height: 1em;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  animation: spinAround 1000ms infinite linear;
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

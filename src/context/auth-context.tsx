@@ -1,4 +1,4 @@
-import React, { createContext, Dispatch, useContext, useReducer, useEffect } from 'react'
+import React from 'react'
 
 import usePersistedState from 'hooks/use-persisted-state'
 /* -------------------------------------------------------------------------- */
@@ -13,11 +13,11 @@ type TAuthState = {
 
 type TInitContext = {
   state: TAuthState
-  dispatch: Dispatch<TActions>
+  dispatch: React.Dispatch<TActions>
 }
 
-export const AuthContext = createContext({} as TInitContext)
-export const useAuth = () => useContext(AuthContext)
+export const AuthContext = React.createContext({} as TInitContext)
+export const useAuth = () => React.useContext(AuthContext)
 
 function authReducer(state: TAuthState, action: TActions): TAuthState {
   switch (action.type) {
@@ -43,10 +43,10 @@ type AuthProviderProps = {
 
 export function AuthProvider(props: AuthProviderProps) {
   const [persistedState, setPersistedState] = usePersistedState('isAuthenticated', false)
-  const [state, dispatch] = useReducer(authReducer, { isAuthenticated: persistedState } as TAuthState)
+  const [state, dispatch] = React.useReducer(authReducer, { isAuthenticated: persistedState } as TAuthState)
   const { children } = props
 
-  useEffect(() => {
+  React.useEffect(() => {
     setPersistedState(state.isAuthenticated)
   }, [setPersistedState, state.isAuthenticated])
 

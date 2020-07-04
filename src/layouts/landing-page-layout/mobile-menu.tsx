@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { X as XIcon } from 'react-feather'
@@ -17,7 +17,7 @@ type MobileMenuProps = {
 export default function MobileMenu(props: MobileMenuProps) {
   const { t } = useTranslation()
   const { open, onClose: handleClose } = props
-  const ref = useRef(null)
+  const ref = React.useRef(null)
   useClickOutside([ref], handleClose)
 
   return (

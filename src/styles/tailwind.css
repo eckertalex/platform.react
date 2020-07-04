@@ -1,6 +1,12 @@
+@import './loader.css';
+
+/* TAILWIND */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS VARS */
 
 :root {
   --color-primary-100: #e6fffa;

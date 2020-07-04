@@ -2,11 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import { about, signIn } from 'routes/routes'
+import { about, signIn, appHome } from 'routes/routes'
+import { useAuth } from 'context/auth-context'
 /* -------------------------------------------------------------------------- */
 
 export default function DesktopMenu() {
   const { t } = useTranslation()
+  const {
+    state: { isAuthenticated },
+  } = useAuth()
 
   return (
     <div className="hidden md:block md:ml-10 md:pr-4">
@@ -29,10 +33,10 @@ export default function DesktopMenu() {
         {t('Topbar.contact', 'Contact')}
       </button>
       <Link
-        to={signIn()}
+        to={isAuthenticated ? appHome() : signIn()}
         className="ml-8 font-medium text-primary-600 hover:text-primary-800 focus:outline-none focus:text-primary-800 transition duration-150 ease-in-out"
       >
-        {t('Topbar.signIn', 'Sign In')}
+        {isAuthenticated ? t('Topbar.dashboard', 'Dashboard') : t('Topbar.signIn', 'Sign In')}
       </Link>
     </div>
   )

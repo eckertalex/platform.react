@@ -5,8 +5,9 @@ import { X as XIcon } from 'react-feather'
 import classNames from 'classnames'
 
 import LogoPlatformReact from 'assets/svg/logo-platform-react'
-import { about, signIn } from 'routes/routes'
+import { about, signIn, appHome } from 'routes/routes'
 import useClickOutside from 'hooks/use-click-outside'
+import { useAuth } from 'context/auth-context'
 /* -------------------------------------------------------------------------- */
 
 type MobileMenuProps = {
@@ -15,10 +16,13 @@ type MobileMenuProps = {
 }
 
 export default function MobileMenu(props: MobileMenuProps) {
-  const { t } = useTranslation()
   const { open, onClose: handleClose } = props
+  const {
+    state: { isAuthenticated },
+  } = useAuth()
   const ref = React.useRef(null)
   useClickOutside([ref], handleClose)
+  const { t } = useTranslation()
 
   return (
     <div
@@ -67,10 +71,10 @@ export default function MobileMenu(props: MobileMenuProps) {
           </div>
           <div>
             <Link
-              to={signIn()}
+              to={isAuthenticated ? appHome() : signIn()}
               className="block w-full px-5 py-3 text-center font-medium text-primary-600 bg-gray-100 hover:bg-gray-100 hover:text-primary-700 focus:outline-none focus:bg-gray-100 focus:text-primary-700 transition duration-150 ease-in-out"
             >
-              {t('Topbar.signIn', 'Sign In')}
+              {isAuthenticated ? t('Topbar.dashboard', 'Dashboard') : t('Topbar.signIn', 'Sign In')}
             </Link>
           </div>
         </div>

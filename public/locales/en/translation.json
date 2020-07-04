@@ -11,14 +11,6 @@
     "signOut": "Sign Out",
     "title": "Home"
   },
-  "LandingFooter": {
-    "about": "About",
-    "contact": "Contact",
-    "cta": "Join 31,000+ other and never miss <br/> out on new tips, tutorials, and more.",
-    "news": "News",
-    "placeholder": "Enter your email",
-    "subscribe": "Subscribe"
-  },
   "AuthPageLayout": {
     "copyright": "2020 eckertalex. All rights reserved.",
     "createAccount": "Create an Account",
@@ -35,11 +27,22 @@
     "helmetTitle": "Forgot password page",
     "requestEmail": "Request Email"
   },
+  "Header": {
+    "search": "Search..."
+  },
   "HeroText": {
     "getStarted": "Get started",
     "headline": "Data to enrich your<1></1><2> online business</2>",
     "liveDemo": "Live demo",
     "text": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+  },
+  "LandingFooter": {
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Join 31,000+ other and never miss <br/> out on new tips, tutorials, and more.",
+    "news": "News",
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe"
   },
   "LandingPage": {
     "ctaInvitation": "Start your free trial today.",
@@ -50,7 +53,7 @@
     "title": "Home"
   },
   "NotFoundPage": {
-    "backToDashboard": "Back to Dashboard",
+    "back": "Back",
     "description": "404 Page not found",
     "looksLikeYouAreLost": "Looks like you've got lost...",
     "title": "404 Page not found"
@@ -83,7 +86,12 @@
   "Topbar": {
     "about": "About",
     "contact": "Contact",
+    "dashboard": "Dashboard",
     "news": "News",
     "signIn": "Sign In"
+  },
+  "menu": {
+    "overview": "Overview",
+    "settings": "Settings"
   }
 }

@@ -11,14 +11,6 @@
     "signOut": "Abmelden",
     "title": "Startseite"
   },
-  "LandingFooter": {
-    "about": "Über uns",
-    "contact": "Kontakt",
-    "cta": "Schließen Sie sich 31.000+ anderen an und verpassen Sie nie <br/> neue Tipps, Tutorials und mehr.",
-    "news": "News",
-    "placeholder": "Geben Sie Ihre E-Mail ein",
-    "subscribe": "Abonnieren"
-  },
   "AuthPageLayout": {
     "copyright": "2020 eckertalex. Alle Rechte vorbehalten.",
     "createAccount": "Konto Erstellung",
@@ -35,11 +27,22 @@
     "helmetTitle": "Passwort Vergessen",
     "requestEmail": "E-Mail anfordern"
   },
+  "Header": {
+    "search": "Suche..."
+  },
   "HeroText": {
     "getStarted": "Jetzt Loslegen",
     "headline": "Daten zur Anreicherung Ihres<1></1><2> Online-Geschäfts</2>",
     "liveDemo": "Live-Demo",
     "text": "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+  },
+  "LandingFooter": {
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "cta": "Schließen Sie sich 31.000+ anderen an und verpassen Sie nie <br/> neue Tipps, Tutorials und mehr.",
+    "news": "News",
+    "placeholder": "Geben Sie Ihre E-Mail ein",
+    "subscribe": "Abonnieren"
   },
   "LandingPage": {
     "ctaInvitation": "Beginnen Sie noch heute mit Ihrem kostenlosen Test.",
@@ -50,7 +53,7 @@
     "title": "Startseite"
   },
   "NotFoundPage": {
-    "backToDashboard": "Zurück zum Dashboard",
+    "back": "Zurück",
     "description": "404 Seite nicht gefunden",
     "looksLikeYouAreLost": "Sieht aus, als hätten Sie sich verlaufen...",
     "title": "404 Seite nicht gefunden"
@@ -83,7 +86,12 @@
   "Topbar": {
     "about": "Über uns",
     "contact": "Kontakt",
+    "dashboard": "Dashboard",
     "news": "News",
     "signIn": "Anmelden"
+  },
+  "menu": {
+    "overview": "Übersicht",
+    "settings": "Einstellungen"
   }
 }

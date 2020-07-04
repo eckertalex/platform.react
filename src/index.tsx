@@ -7,6 +7,7 @@ import * as serviceWorker from 'serviceWorker'
 
 // Import root app
 import App from 'app/app'
+import FullScreenSpinner from 'fragments/loading/full-screen-spinner'
 
 // Initialize languages
 import 'i18n/i18n'
@@ -21,7 +22,7 @@ type IndexProps = {
 function Index(props: IndexProps) {
   return (
     <React.StrictMode>
-      <React.Suspense fallback="Loading...">{props.element}</React.Suspense>
+      <React.Suspense fallback={<FullScreenSpinner />}>{props.element}</React.Suspense>
     </React.StrictMode>
   )
 }
